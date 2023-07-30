@@ -96,27 +96,27 @@ public class AudioRecorder
 
     }
 
-    private bool NotePlayed(float[] buffer, int end)
-    {
-        double power = GoertzelFilter(buffer, TargetFreaquency, buffer.Length);
-        if (power > 500) return true;
-        return false;
-    }
+    //private bool NotePlayed(float[] buffer, int end)
+    //{
+    //    double power = GoertzelFilter(buffer, TargetFreaquency, buffer.Length);
+    //    if (power > 500) return true;
+    //    return false;
+    //}
 
-    private double GoertzelFilter(float[] samples, double targetFreaquency, int end)
-    {
-        double sPrev = 0.0;
-        double sPrev2 = 0.0;
-        int i;
-        double normalizedfreq = targetFreaquency / SampleRate;
-        double coeff = 2 * Math.Cos(2 * Math.PI * normalizedfreq);
-        for (i = 0; i < end; i++)
-        {
-            double s = samples[i] + coeff * sPrev - sPrev2;
-            sPrev2 = sPrev;
-            sPrev = s;
-        }
-        double power = sPrev2 * sPrev2 + sPrev * sPrev - coeff * sPrev * sPrev2;
-        return power;
-    }
+    //private double GoertzelFilter(float[] samples, double targetFreaquency, int end)
+    //{
+    //    double sPrev = 0.0;
+    //    double sPrev2 = 0.0;
+    //    int i;
+    //  //  double normalizedfreq = targetFreaquency / SampleRate;
+    //    double coeff = 2 * Math.Cos(2 * Math.PI * normalizedfreq);
+    //    for (i = 0; i < end; i++)
+    //    {
+    //        double s = samples[i] + coeff * sPrev - sPrev2;
+    //        sPrev2 = sPrev;
+    //        sPrev = s;
+    //    }
+    //    double power = sPrev2 * sPrev2 + sPrev * sPrev - coeff * sPrev * sPrev2;
+    //    return power;
+    //}
 }
