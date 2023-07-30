@@ -95,7 +95,7 @@ public class AudioRecorder
         }
 
     }
-
+    // test
     private bool NotePlayed(float[] buffer, int end)
     {
         double power = GoertzelFilter(buffer, TargetFreaquency, buffer.Length);
