@@ -102,7 +102,7 @@ public class AudioRecorder
         if (power > 500) return true;
         return false;
     }
-
+    //test
     private double GoertzelFilter(float[] samples, double targetFreaquency, int end)
     {
         double sPrev = 0.0;
