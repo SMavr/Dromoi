@@ -10,8 +10,8 @@ public class AudioRecorder
         var waveIn = new WaveInEvent
         {
             DeviceNumber = 0, // indicates which microphone to use
-            WaveFormat = new NAudio.Wave.WaveFormat(rate: 44100, bits: 16, channels: 1),
-            BufferMilliseconds = 20
+            WaveFormat = new WaveFormat(rate: 44100, bits: 16, channels: 1),
+            BufferMilliseconds = 2000
         };
         waveIn.DataAvailable += WaveIn_DataAvailable;
         waveIn.StartRecording();
@@ -67,6 +67,9 @@ public class AudioRecorder
 
     private static void ExtractMusicalNote(float peakFrequency)
     {
+        if (peakFrequency <= 1000)
+            return;
+
         // Frequencies of musical notes (A4 = 440 Hz)
         double a4Frequency = 440.0;
         double twelfthRootOf2 = Math.Pow(2.0, 1.0 / 12.0);
@@ -88,7 +91,32 @@ public class AudioRecorder
         {
             string noteName = notes[noteNameIndex];
             Console.Write($"Musical Note: {noteName}{octave}");
+            Console.Write($"Peak Frequency: {peakFrequency}");
         }
 
+    }
+
+    private bool NotePlayed(float[] buffer, int end)
+    {
+        double power = GoertzelFilter(buffer, TargetFreaquency, buffer.Length);
+        if (power > 500) return true;
+        return false;
+    }
+
+    private double GoertzelFilter(float[] samples, double targetFreaquency, int end)
+    {
+        double sPrev = 0.0;
+        double sPrev2 = 0.0;
+        int i;
+        double normalizedfreq = targetFreaquency / SampleRate;
+        double coeff = 2 * Math.Cos(2 * Math.PI * normalizedfreq);
+        for (i = 0; i < end; i++)
+        {
+            double s = samples[i] + coeff * sPrev - sPrev2;
+            sPrev2 = sPrev;
+            sPrev = s;
+        }
+        double power = sPrev2 * sPrev2 + sPrev * sPrev - coeff * sPrev * sPrev2;
+        return power;
     }
 }
