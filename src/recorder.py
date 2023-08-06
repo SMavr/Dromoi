@@ -1,5 +1,7 @@
 import pyaudio
 import wave
+import audioop
+
 
 CHUNK = 1024
 FORMAT = pyaudio.paInt16
@@ -23,6 +25,8 @@ def recond():
     try:
         while True:
             data = stream.read(CHUNK)
+            rms = audioop.rms(data, 2) 
+            print(rms, end='\r')
             frames.append(data)
     except KeyboardInterrupt:
         print("Done recording")
