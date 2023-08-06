@@ -9,7 +9,7 @@ FORMAT = pyaudio.paInt16
 CHANNELS = 1
 RATE = 44100
 
-def recond():
+def record():
 
     p = pyaudio.PyAudio()
 
@@ -47,7 +47,7 @@ def recond():
 def record_to_file(file_path):
     wf = wave.open(file_path, 'wb')
     wf.setnchannels(CHANNELS)
-    sample_width, frames = recond()
+    sample_width, frames = record()
     wf.setsampwidth(sample_width)
     wf.setframerate(RATE)
     wf.writeframes(b''.join(frames))
