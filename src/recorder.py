@@ -25,7 +25,7 @@ def recond():
     try:
         while True:
             data = stream.read(CHUNK)
-            rms = audioop.rms(data, 2) 
+            rms = audioop.rms(data, 2)/10000
             print(rms, end='\r')
             frames.append(data)
     except KeyboardInterrupt:
