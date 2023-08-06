@@ -1,6 +1,7 @@
 import pyaudio
 import wave
 import audioop
+import sys
 
 
 CHUNK = 1024
@@ -25,8 +26,7 @@ def recond():
     try:
         while True:
             data = stream.read(CHUNK)
-            rms = audioop.rms(data, 2)/10000
-            print(rms, end='\r')
+            print_volume(data)
             frames.append(data)
     except KeyboardInterrupt:
         print("Done recording")
@@ -52,6 +52,12 @@ def record_to_file(file_path):
     wf.setframerate(RATE)
     wf.writeframes(b''.join(frames))
     wf.close()
+
+def print_volume(data:bytes):
+    rms = audioop.rms(data, 2)
+    print(' ' * 20, end='\r')
+    print('#' * int((rms/500)), end='\r')
+    
 
 if __name__ == '__main__':
     print('#' * 80)
