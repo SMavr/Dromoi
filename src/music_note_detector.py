@@ -21,6 +21,21 @@ def note_detect(audio_file):
     plt.plot(sound)
     plt.show()
 
+    sound = np.divide(sound, float(2**15)) # Scaling it to 0 - 1
+    counter = audio_file.getnchannels()
+
+    plt.plot(sound)
+    plt.show()
+
+    # Applying FFT from numpy module
+    fourier = np.fft.fft(sound)
+    fourier = np.absolute(fourier)
+    imax = np.argmax(fourier[0:int(file_length/2)]) # index of max element
+
+    plt.plot(fourier)
+    plt.show()
+
+
 
 if __name__ == "__main__":
     folder_path = os.getcwd()
