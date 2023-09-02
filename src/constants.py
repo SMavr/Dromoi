@@ -1,0 +1,2 @@
+CHANNELS = 1
+RATE = 44100
