@@ -5,14 +5,14 @@ import struct
 import constants
 
 def note_detect(sound):
-    file_length = len(sound)
+    sound_length = len(sound)
     sampling_frequency = constants.RATE
     counter = constants.CHANNELS
 
     # Applying FFT from numpy module
     fourier = np.fft.fft(sound)
     fourier = np.absolute(fourier)
-    imax = np.argmax(fourier[0:int(file_length/2)]) # index of max element
+    imax = np.argmax(fourier[0:int(sound_length/2)]) # index of max element
 
     # Peak detection
     i_begin = -1
@@ -27,7 +27,7 @@ def note_detect(sound):
     imax = np.argmax(fourier[0:i_end + 100])
 
     # formula to convert index into sound frequency
-    freq=(imax * sampling_frequency) / (file_length * counter) 
+    freq=(imax * sampling_frequency) / (sound_length * counter) 
 
 	#frequency database
     note = 0
