@@ -42,8 +42,3 @@ def record():
     audio_array = np.frombuffer(b''.join(audio_data), dtype=np.int16)
 
     return audio_array
-
-
-if __name__ == "__main__":
-    test = record()
-    print("Recording finished 2")
