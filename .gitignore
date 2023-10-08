@@ -5,6 +5,8 @@
 
 # Wav files
 *.wav
+# Distributions
+dist/
 
 # User-specific files
 *.rsuser
