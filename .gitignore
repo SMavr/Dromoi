@@ -5,8 +5,11 @@
 
 # Wav files
 *.wav
-# Distributions
+
+# Distribution
 dist/
+build/
+test.spec
 
 # User-specific files
 *.rsuser
