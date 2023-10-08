@@ -6,7 +6,7 @@ FORMAT = pyaudio.paInt16  # Audio format (16-bit PCM)
 CHANNELS = 1              # Number of audio channels (1 for mono, 2 for stereo)
 RATE = 44100              # Sample rate (samples per second)
 CHUNK = 1024              # Number of frames per buffer
-RECORD_SECONDS = 3       # Duration of recording in seconds
+RECORD_SECONDS = 1       # Duration of recording in seconds
 
 
 def record():
