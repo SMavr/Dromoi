@@ -1,7 +1,4 @@
-import os
-import wave
 import numpy as np
-import struct
 import constants
 
 def note_detect(sound):
