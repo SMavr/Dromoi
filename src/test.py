@@ -11,4 +11,4 @@ if __name__ == "__main__":
     
     print(str(recognized_notes))
     
-
+    input("Press Enter to continue")
