@@ -13,7 +13,7 @@ jobs:
       with:
         python-version: 3.11.4
     - run: pip install pyinstaller
-    - run: python -m PyInstaller --onefile .\src\test.py
+    - run: python -m PyInstaller .\src\test.py
     # python-version: # optional
     # - name: Package Application
     #   uses: JackMcKew/pyinstaller-action-windows@main
