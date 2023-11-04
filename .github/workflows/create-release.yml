@@ -13,6 +13,7 @@ jobs:
       uses: JackMcKew/pyinstaller-action-windows@main
       with:
         path: src
+        spec: test.py
 
     - uses: actions/upload-artifact@v2
       with:
