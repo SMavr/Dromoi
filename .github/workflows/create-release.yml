@@ -13,7 +13,7 @@ jobs:
       with:
         python-version: 3.11.4
     - run: pip install pyinstaller
-    - run: pyinstaller .\src\test.py --onefile
+    - run: pyinstaller ./src/test.py --onefile
     # python-version: # optional
     # - name: Package Application
     #   uses: JackMcKew/pyinstaller-action-windows@main
@@ -24,7 +24,7 @@ jobs:
     - uses: actions/upload-artifact@v3.1.3
       with:
         name: test-release
-        path: src/dist/
+        path: dist/*
     # - uses: actions/setup-python@v2
     #   with:
     #     python-version: 3.7
