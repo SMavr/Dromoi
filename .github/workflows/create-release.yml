@@ -2,20 +2,32 @@ name: Package Application with Pyinstaller
 on: workflow_dispatch 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     
     steps:
     - uses: actions/checkout@v4.1.1
     
-   
 
-    - name: Package Application
-      uses: JackMcKew/pyinstaller-action-windows@main
+    - name: Setup Python
+      uses: actions/setup-python@v4.7.1
       with:
-        path: src
-        spec: test.py --onefile
+        python-version: 3.11.4
+    - run: pip install -r pyinstaller
+    - run: pyinstaller ./src/test.py
+    # python-version: # optional
+    # - name: Package Application
+    #   uses: JackMcKew/pyinstaller-action-windows@main
+    #   with:
+    #     path: src
+    #     spec: test.py --onefile
 
     - uses: actions/upload-artifact@v3.1.3
       with:
-        name: name-of-artifact
-        path: src/dist/windows
+        name: test-release
+        path: src/dist/
+    # - uses: actions/setup-python@v2
+    #   with:
+    #     python-version: 3.7
+
+    # - run: pip install -r requirements.txt pyinstaller
+    # - run: pyinstaller your-code.py
