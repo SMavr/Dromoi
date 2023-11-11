@@ -1,9 +1,10 @@
 import recorder
 import music_note_detector
+import constants
 
 if __name__ == "__main__":
     recognized_notes = []
-    for x in range(10):
+    for x in range(constants.NUMBER_OF_NOTES):
         sound = recorder.record()
         note = music_note_detector.note_detect(sound)
         recognized_notes.append(note)
