@@ -1,6 +1,8 @@
+import constants
 import recorder
 import music_note_detector
-import constants
+import scale_detector
+
 
 if __name__ == "__main__":
     recognized_notes = []
@@ -11,5 +13,7 @@ if __name__ == "__main__":
         print("\nDetected Note = " + str(note))
     
     print(str(recognized_notes))
+
+    print(scale_detector.detect_scale(recognized_notes))
     
     input("Press Enter to continue")
