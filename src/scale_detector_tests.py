@@ -3,7 +3,7 @@ import numpy as np
 import pytest
 
 @pytest.mark.parametrize("recognized_notes",[
-    np.array(["F3", "C3"])
+    np.array(["E0","F0","G0"])
 ])
   
 def test_detect_scale(recognized_notes):
