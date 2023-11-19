@@ -4,7 +4,8 @@ armoniko_minore_d_set = set(["D","E", "F", "G", "A", "A#", "C#", "D"])
 # Αρμονικό Μινόρε Re-
 def detect_scale(notes):
     notes_without_octave = map(lambda note: note[:-1], notes)
-
+    for i in notes_without_octave:
+        print(i)
     output = ""
     if is_scale(fisiko_minore_d_set, notes_without_octave):
         output += " Fisiko Minore D"
