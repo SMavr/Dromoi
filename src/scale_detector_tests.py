@@ -16,12 +16,12 @@ def test_is_scale(recognized_notes, scale, is_fisiko_armoniko_scale):
     assert result == is_fisiko_armoniko_scale
 
 
-# @pytest.mark.parametrize("notes, output", [
-#     (np.array(["E4","F4","C#4"]), " Armoniko Minore D"),
-#     (np.array(["E4","F4","C4"]), " Fisiko Minore D"),
-#     (np.array(["E4","F4","D4"]), " Fisiko Minore D Armoniko Minore D")
-# ])
+@pytest.mark.parametrize("notes, output", [
+    (np.array(["E4","F4","C#4"]), " Armoniko Minore D"),
+    (np.array(["D4","F4","C4"]), " Fisiko Minore D"),
+    (np.array(["E4","F4","D4"]), " Fisiko Minore D Armoniko Minore D")
+])
 
-# def test_detect_scale(notes, output):
-#     result = scale_detector.detect_scale(notes)
-#     assert result == output
+def test_detect_scale(notes, output):
+    result = scale_detector.detect_scale(notes)
+    assert result == output
