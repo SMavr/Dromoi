@@ -10,6 +10,7 @@ pireotikos_d_set = set(["D", "D#", "F#", "G#", "A", "A#", "C#", "D"])
 fisiko_matzore_d_set = set(["D", "E", "F#", "G", "A", "B", "C#", "D"])
 segiah_d_set = set(["D", "E", "F#", "G", "A", "B", "C#", "D"])
 houzam_d_set = set(["D", "F", "F#", "G", "A", "A#", "C#", "D"])
+ouzak_d_set = set(["D", "D#", "F", "G", "A", "A#", "C", "D"])
 
 def detect_scale(notes):
     get_notes_without_octave = np.vectorize(lambda note: note[:-1])
