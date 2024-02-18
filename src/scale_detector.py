@@ -2,6 +2,8 @@ import numpy as np
 
 fisiko_minore_d_set = set(["D","E", "F", "G", "A", "A#", "C", "D"])
 armoniko_minore_d_set = set(["D","E", "F", "G", "A", "A#", "C#", "D"])
+niaventi_d_set = set(["D", "E", "F", "G#", "A", "A#", "C#", "D"])
+nigris_poimenikos_d_set = set(["D", "E", "F", "G#", "A", "B", "C", "D"])
 
 def detect_scale(notes):
     get_notes_without_octave = np.vectorize(lambda note: note[:-1])
