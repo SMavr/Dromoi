@@ -36,6 +36,21 @@ def detect_scale(notes):
     if (is_scale(hitzaskiar_d_set, notes_without_octave)):
          output += " Hitzaskiar D"
 
+    if (is_scale(pireotikos_d_set, notes_without_octave)):
+         output += " Peirotikos D"
+
+    if (is_scale(fisiko_matzore_d_set, notes_without_octave)):
+         output += " Fisiko Matzore D"
+
+    if (is_scale(segiah_d_set, notes_without_octave)):
+         output += " Segiah D"
+
+    if (is_scale(houzam_d_set, notes_without_octave)):
+         output += " Houzam D"
+
+    if (is_scale(ouzak_d_set, notes_without_octave)):
+         output += " Ouzak D"
+         
     return output
 
 def is_scale(scale, notes):
