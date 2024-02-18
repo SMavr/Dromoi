@@ -4,6 +4,9 @@ fisiko_minore_d_set = set(["D","E", "F", "G", "A", "A#", "C", "D"])
 armoniko_minore_d_set = set(["D","E", "F", "G", "A", "A#", "C#", "D"])
 niaventi_d_set = set(["D", "E", "F", "G#", "A", "A#", "C#", "D"])
 nigris_poimenikos_d_set = set(["D", "E", "F", "G#", "A", "B", "C", "D"])
+hitzaz_d_set = set(["D", "Eb", "F#", "G", "A", "A#", "C", "D"])
+hitzaskiar_d_set = set(["D", "D#", "F#", "G", "A", "A#", "C#", "D"])
+pireotikos_d_set = set(["D", "D#", "F#", "G#", "A", "A#", "C#", "D"]])
 
 def detect_scale(notes):
     get_notes_without_octave = np.vectorize(lambda note: note[:-1])
