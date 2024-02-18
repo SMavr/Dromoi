@@ -1,6 +1,6 @@
 import numpy as np
 
-fisiko_minore_d_set = set(["D","E", "F", "G", "A", "A#", "C", "D"])
+fisiko_minore_d_set = (set(["D","E", "F", "G", "A", "A#", "C", "D"]), "Test")
 armoniko_minore_d_set = set(["D","E", "F", "G", "A", "A#", "C#", "D"])
 niaventi_d_set = set(["D", "E", "F", "G#", "A", "A#", "C#", "D"])
 nigris_poimenikos_d_set = set(["D", "E", "F", "G#", "A", "B", "C", "D"])
@@ -23,6 +23,18 @@ def detect_scale(notes):
 
     if is_scale(armoniko_minore_d_set, notes_without_octave):
         output += " Armoniko Minore D"
+
+    if is_scale(niaventi_d_set, notes_without_octave):
+        output += " Niaventi D"
+
+    if (is_scale(nigris_poimenikos_d_set, notes_without_octave)):
+         output += " Nigris, Poimenikos D"
+
+    if (is_scale(hitzaz_d_set, notes_without_octave)):
+         output += " Hitzaz D"
+
+    if (is_scale(hitzaskiar_d_set, notes_without_octave)):
+         output += " Hitzaskiar D"
 
     return output
 
