@@ -82,4 +82,10 @@ p {
     background-color: #fce4ec;
     margin: 10px 0; /* Adjust as needed */
 }
+table {
+    border-collapse: collapse;
+}
+td {
+    border: 1px solid white; 
+}
 
