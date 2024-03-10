@@ -76,4 +76,10 @@ p {
     transition: 0.5s;
     cursor: pointer;
   }
+.line {
+    width: 100%; /* Adjust as needed */
+    height: 2px; /* Adjust as needed */
+    background-color: #fce4ec;
+    margin: 10px 0; /* Adjust as needed */
+}
 
