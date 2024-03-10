@@ -11,11 +11,11 @@ def index():
 def scale_details(scale_id):
     # Fetch details of the component based on component_id
     # For example, you can retrieve details from a database
-    component = next((c for c in supported_scales.collection if c.id == scale_id), None)
-    if component:
-        return f"Details of {component.name}"
+    scale = next((c for c in supported_scales.collection if c.id == scale_id), None)
+    if scale:
+        return render_template('scale_details.html', scale=scale)
     else:
-        return "Component not found"
+        return "Scale not found"
 
 
 if __name__ == '__main__':
