@@ -63,4 +63,8 @@ body {
 .list ul li:hover:before {
   transform: scaleX(1);
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
 

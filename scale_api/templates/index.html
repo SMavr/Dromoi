@@ -11,7 +11,7 @@
         <h2>Κλίμακες</h2>
         <ul>   
             {% for item in items %}
-                <li> <span>{{ item.name }}</span></li>
+                <li> <a href="{{ url_for('scale_details', scale_id=item.id) }}"> <span>{{ item.name }}</span></li>
             {% endfor %}
         </ul>
     </div>
