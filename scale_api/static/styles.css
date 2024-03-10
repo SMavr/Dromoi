@@ -83,6 +83,7 @@ p {
     margin: 10px 0; /* Adjust as needed */
 }
 table {
+    border-right: 5px solid white;
     border-collapse: collapse;
 }
 td {
