@@ -17,7 +17,7 @@ body {
 .list {
   position: relative;
 }
-.list h2 {
+h2 {
   color: #fff;
   font-weight: 700;
   letter-spacing: 1px;
@@ -67,4 +67,13 @@ a {
     text-decoration: none;
     color: inherit;
 }
+p {
+    position: relative;
+    left: 0;
+    color: #fce4ec;
+    list-style: none;
+    margin: 4px 0;
+    transition: 0.5s;
+    cursor: pointer;
+  }
 
