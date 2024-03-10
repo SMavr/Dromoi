@@ -7,11 +7,13 @@
     <title>Array of Items</title>
 </head>
 <body>
-    <h1>Items</h1>
-    <ul>
-        {% for item in items %}
-            <li>{{ item }}</li>
-        {% endfor %}
-    </ul>
+    <div class="list">
+        <h2>Κλίμακες</h2>
+        <ul>   
+            {% for item in items %}
+                <li> <span>{{ item }}</span></li>
+            {% endfor %}
+        </ul>
+    </div>
 </body>
 </html>
