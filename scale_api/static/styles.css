@@ -85,10 +85,22 @@ p {
 table {
     border-right: 5px solid white;
     border-collapse: collapse;
+    margin-top: 200px;
 }
 td {
     border: 1px solid white; 
     width: 100px; 
     height: 30px;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding-top: 2px;
+    color: white;
+    background-color: #f50057;
+    border-radius: 100%; 
+    transform: translate(100%, -50%);
 }
 
