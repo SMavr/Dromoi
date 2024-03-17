@@ -60,19 +60,24 @@
                         {% endfor %}
                     </tr>
                     <tr>
-                        {% for _ in range(12) %}
+                        {% for tabNo in range(12) %}
                         <td>
-                            {% if scale.id == 1 %}
-                            <div class="container"><div class=circle>3</div></div>
-                            {% endif %}
+                            {% for coordinate in scale_coordinates.coordinates %}
+                                {% if coordinate.chord == 2 and coordinate.tab == tabNo %}
+                                        <div class="container"><div class=circle>{{ coordinate.finger }}</div></div>
+                                {% endif %}
+                            {% endfor %}
                         </td>
                         {% endfor %}
+                    </tr>
                     <tr>
-                        {% for _ in range(12) %}
+                        {% for tabNo in range(12) %}
                         <td>
-                            {% if scale.id == 1 %}
-                            <div class="container"><div class=circle>3</div></div>
-                            {% endif %}
+                            {% for coordinate in scale_coordinates.coordinates %}
+                                {% if coordinate.chord == 1 and coordinate.tab == tabNo %}
+                                        <div class="container"><div class=circle>{{ coordinate.finger }}</div></div>
+                                {% endif %}
+                            {% endfor %}
                         </td>
                         {% endfor %}
                     </tr>
