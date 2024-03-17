@@ -21,6 +21,12 @@ class ScaleCoordinates:
         self.id = id
         self.coordinates = coordinates
 
+class Coordinate:
+    def __init__(self, chord, tab, finger):
+        self.chord = chord
+        self.tab = tab
+        self.finger = finger
+
 coordinates = [
-    ScaleCoordinates (1, 'Φυσικό Μινόρε'), 
-    ScaleCoordinates (2, 'Αρμονικό Μινόρε')]
+    ScaleCoordinates (1, [Coordinate(3, 12, 1), Coordinate(3, 11, 1)]), 
+    ScaleCoordinates (2, [Coordinate(3, 11, 3), Coordinate(3, 11, 1)])]
