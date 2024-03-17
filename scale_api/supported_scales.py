@@ -15,3 +15,12 @@ collection = [
     Scale(9,'Σεγκιάχ'), 
     Scale(10,'Χουζάμ'),
     Scale(11,'Ουσάκ')]
+
+class ScaleCoordinates:
+    def __init__(self, id, coordinates):
+        self.id = id
+        self.coordinates = coordinates
+
+coordinates = [
+    ScaleCoordinates (1, 'Φυσικό Μινόρε'), 
+    ScaleCoordinates (2, 'Αρμονικό Μινόρε')]
