@@ -27,6 +27,6 @@ class Coordinate:
         self.tab = tab
         self.finger = finger
 
-coordinates = [
+scale_coordinates = [
     ScaleCoordinates (1, [Coordinate(3, 12, 1), Coordinate(3, 11, 1)]), 
     ScaleCoordinates (2, [Coordinate(3, 11, 3), Coordinate(3, 11, 1)])]

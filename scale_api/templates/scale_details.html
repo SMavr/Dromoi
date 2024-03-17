@@ -13,7 +13,6 @@
         <h2>Details of {{ scale.name }}</h2>
         <p>ID: {{ scale.id }}</p>
         <p>Name: {{ scale.name }}</p>
-        <p>Name: {{ coordinates }}</p>
         <div class="table-container">
             <table class=content-table >
                 <tbody>
@@ -52,9 +51,11 @@
                     <tr>
                         {% for _ in range(12) %}
                         <td>
-                            {% if scale.id == 1 %}
-                            <div class="container"><div class=circle>3</div></div>
-                            {% endif %}
+                            {% for coordinate in scale_coordinates.coordinates %}
+                                {% if coordinate.chord == 3 and coordinate.tab == 12 %}
+                                        <div class="container"><div class=circle>3</div></div>
+                                {% endif %}
+                            {% endfor %}
                         </td>
                         {% endfor %}
                     </tr>
