@@ -87,6 +87,7 @@ table {
     border-collapse: collapse;
     margin-top: 200px;
 }
+
 td {
     border: 1px solid white; 
     width: 100px; 
@@ -110,4 +111,12 @@ td {
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+.note-body tr td {
+  border: 1px solid red; 
+  width: 100px; 
+  align-content: center;
+  height: 50px;
+  text-align: center; 
 }
