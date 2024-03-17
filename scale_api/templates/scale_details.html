@@ -49,46 +49,37 @@
             <table class="note-table">
                 <tbody class="note-body">
                     <tr>
-                        <td ><div class="container"><div class=circle>2</div></div></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        {% for tabNo in range(12) %}
+                        <td>
+                            {% for coordinate in scale_coordinates.coordinates %}
+                                {% if coordinate.chord == 3 and coordinate.tab == tabNo %}
+                                        <div class="container"><div class=circle>{{ coordinate.finger }}</div></div>
+                                {% endif %}
+                            {% endfor %}
+                        </td>
+                        {% endfor %}
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        {% for tabNo in range(12) %}
+                        <td>
+                            {% for coordinate in scale_coordinates.coordinates %}
+                                {% if coordinate.chord == 2 and coordinate.tab == tabNo %}
+                                        <div class="container"><div class=circle>{{ coordinate.finger }}</div></div>
+                                {% endif %}
+                            {% endfor %}
+                        </td>
+                        {% endfor %}
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        {% for tabNo in range(12) %}
+                        <td>
+                            {% for coordinate in scale_coordinates.coordinates %}
+                                {% if coordinate.chord == 1 and coordinate.tab == tabNo %}
+                                        <div class="container"><div class=circle>{{ coordinate.finger }}</div></div>
+                                {% endif %}
+                            {% endfor %}
+                        </td>
+                        {% endfor %}
                     </tr>
                 </tbody>
             </table>

@@ -119,7 +119,7 @@ td {
 }
 
 .note-body tr td {
-  border: 1px solid red; 
+  border: 0px;
   align-content: center;
   height: 50px;
   text-align: center; 

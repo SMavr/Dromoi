@@ -15,3 +15,18 @@ collection = [
     Scale(9,'Σεγκιάχ'), 
     Scale(10,'Χουζάμ'),
     Scale(11,'Ουσάκ')]
+
+class ScaleCoordinates:
+    def __init__(self, id, coordinates):
+        self.id = id
+        self.coordinates = coordinates
+
+class Coordinate:
+    def __init__(self, chord, tab, finger):
+        self.chord = chord
+        self.tab = tab
+        self.finger = finger
+
+scale_coordinates = [
+    ScaleCoordinates (1, [Coordinate(1, 11, 1), Coordinate(2, 10, 2)]), 
+    ScaleCoordinates (2, [Coordinate(2, 11, 3), Coordinate(1, 10, 1)])]
