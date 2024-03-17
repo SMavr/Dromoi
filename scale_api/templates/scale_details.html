@@ -49,11 +49,11 @@
             <table class="note-table">
                 <tbody class="note-body">
                     <tr>
-                        {% for _ in range(12) %}
+                        {% for tabNo in range(12) %}
                         <td>
                             {% for coordinate in scale_coordinates.coordinates %}
-                                {% if coordinate.chord == 3 and coordinate.tab == 12 %}
-                                        <div class="container"><div class=circle>3</div></div>
+                                {% if coordinate.chord == 3 and coordinate.tab == tabNo %}
+                                        <div class="container"><div class=circle>{{ coordinate.finger }}</div></div>
                                 {% endif %}
                             {% endfor %}
                         </td>
