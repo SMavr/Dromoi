@@ -82,7 +82,7 @@ p {
     background-color: #fce4ec;
     margin: 10px 0; /* Adjust as needed */
 }
-table {
+.content-table {
     border-right: 5px solid white;
     border-collapse: collapse;
     margin-top: 200px;
@@ -105,6 +105,12 @@ td {
     background-color: #f50057;
     border-radius: 100%;
 }
+
+.note-table {
+  border-collapse: collapse;
+  margin-top: 180px;
+}
+
 
 .container {
   display: flex;
