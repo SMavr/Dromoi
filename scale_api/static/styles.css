@@ -82,25 +82,58 @@ p {
     background-color: #fce4ec;
     margin: 10px 0; /* Adjust as needed */
 }
-table {
+.content-table {
     border-right: 5px solid white;
     border-collapse: collapse;
-    margin-top: 200px;
 }
+
 td {
     border: 1px solid white; 
     width: 100px; 
-    height: 30px;
+    align-content: center;
+    height: 50px;
+    text-align: center; 
 }
-
+  
 .circle {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     text-align: center;
-    padding-top: 2px;
+    align-content: center;
     color: white;
     background-color: #f50057;
-    border-radius: 100%; 
-    transform: translate(110%, -50%);
+    border-radius: 100%;
+}
+
+.note-table {
+  border-collapse: collapse;
+  margin-top: -25px;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.note-body tr td {
+  border: 1px solid red; 
+  align-content: center;
+  height: 50px;
+  text-align: center; 
+}
+
+.table-container {
+  position: relative;
+  width: 1500px;
+  margin-top: 20px;
+  margin-top: 200px;
+}
+.table-container table {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
