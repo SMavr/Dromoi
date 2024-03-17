@@ -110,7 +110,6 @@ td {
   margin-top: -25px;
 }
 
-
 .container {
   display: flex;
   justify-content: center;
@@ -135,5 +134,14 @@ td {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.white-circle {
+  width: 8px;
+  height: 8px;
+  text-align: center;
+  align-content: center;
+  background-color: white;
+  border-radius: 100%;
 }
 
