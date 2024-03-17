@@ -115,8 +115,20 @@ td {
 
 .note-body tr td {
   border: 1px solid red; 
-  width: 100px; 
   align-content: center;
   height: 50px;
   text-align: center; 
 }
+
+.table-container {
+  position: relative;
+  width: 1500px;
+  margin-top: 20px; /* Adjust top margin to create space between tables */
+}
+.table-container table {
+  position: absolute; /* Position the table absolutely */
+  top: 0; /* Align the top of the table */
+  left: 0; /* Align the left of the table */
+  /* Add more positioning or styling as needed */
+}
+
