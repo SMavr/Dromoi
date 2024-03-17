@@ -85,7 +85,6 @@ p {
 .content-table {
     border-right: 5px solid white;
     border-collapse: collapse;
-    margin-top: 200px;
 }
 
 td {
@@ -108,7 +107,7 @@ td {
 
 .note-table {
   border-collapse: collapse;
-  margin-top: 180px;
+  margin-top: -20px;
 }
 
 
@@ -129,12 +128,12 @@ td {
 .table-container {
   position: relative;
   width: 1500px;
-  margin-top: 20px; /* Adjust top margin to create space between tables */
+  margin-top: 20px;
+  margin-top: 200px;
 }
 .table-container table {
-  position: absolute; /* Position the table absolutely */
-  top: 0; /* Align the top of the table */
-  left: 0; /* Align the left of the table */
-  /* Add more positioning or styling as needed */
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
