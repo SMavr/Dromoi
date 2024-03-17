@@ -55,35 +55,24 @@
                             <div class="container"><div class=circle>3</div></div>
                             {% endif %}
                         </td>
-                    {% endfor %}
+                        {% endfor %}
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+                        {% for _ in range(12) %}
+                        <td>
+                            {% if scale.id == 1 %}
+                            <div class="container"><div class=circle>3</div></div>
+                            {% endif %}
+                        </td>
+                        {% endfor %}
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        {% for _ in range(12) %}
+                        <td>
+                            {% if scale.id == 1 %}
+                            <div class="container"><div class=circle>3</div></div>
+                            {% endif %}
+                        </td>
+                        {% endfor %}
                     </tr>
                 </tbody>
             </table>
