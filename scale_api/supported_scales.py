@@ -21,14 +21,16 @@ class ScaleCoordinates:
         self.id = id
         self.coordinates = coordinates
 
-class Coordinate:
+class Coord:
     def __init__(self, chord, tab, finger):
         self.chord = chord
         self.tab = tab
         self.finger = finger
 
 scale_coordinates = [
-    ScaleCoordinates (1, [Coordinate(2, 7, 1), Coordinate(2, 5, 1), Coordinate(2, 4, 2),  
-                          Coordinate(2, 2, 4), Coordinate(1, 5, 1), Coordinate(1, 4, 2), 
-                          Coordinate(1, 2, 2), Coordinate(1, 0, 4)]), 
-    ScaleCoordinates (2, [Coordinate(2, 11, 3), Coordinate(1, 10, 1)])]
+    ScaleCoordinates (1, [Coord(2, 7, 1), Coord(2, 5, 1), Coord(2, 4, 2),  
+                          Coord(2, 2, 4), Coord(1, 5, 1), Coord(1, 4, 2), 
+                          Coord(1, 2, 2), Coord(1, 0, 4)]), 
+    ScaleCoordinates (2, [Coord(2, 7, 1), Coord(2, 5, 1), Coord(2, 4, 2),  
+                          Coord(2, 2, 4), Coord(1, 5, 1), Coord(1, 4, 2), 
+                          Coord(1, 1, 2), Coord(1, 0, 3)])]
