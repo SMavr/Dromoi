@@ -28,5 +28,5 @@ class Coordinate:
         self.finger = finger
 
 scale_coordinates = [
-    ScaleCoordinates (1, [Coordinate(1, 11, 1), Coordinate(2, 10, 2)]), 
+    ScaleCoordinates (1, [Coordinate(2, 7, 1), Coordinate(2, 5, 1), Coordinate(2, 4, 2)]), 
     ScaleCoordinates (2, [Coordinate(2, 11, 3), Coordinate(1, 10, 1)])]
