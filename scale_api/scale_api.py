@@ -13,7 +13,9 @@ def scale_details(scale_id):
     # For example, you can retrieve details from a database
     scale = next((c for c in supported_scales.collection if c.id == scale_id), None)
     if scale:
-        return render_template('scale_details.html', scale=scale, scale_coordinates=supported_scales.scale_coordinates[scale.id-1])
+        return render_template('scale_details.html', 
+                               scale=scale, scale_coordinates=supported_scales.scale_coordinates[scale.id-1], 
+                               items= supported_scales.collection)
     else:
         return "Scale not found"
 

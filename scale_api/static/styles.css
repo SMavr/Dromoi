@@ -9,13 +9,18 @@
 }
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
   background: #000;
   min-height: 100vh;
 }
 .list {
-  position: relative;
+  float: left;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+.detail {
+  float: right;
+  padding: 20px;
+  padding-left: 80px;
 }
 h2 {
   color: #fff;
@@ -128,7 +133,7 @@ td {
   position: relative;
   width: 1500px;
   margin-top: 20px;
-  margin-top: 100px;
+  margin-top: 180px;
 }
 .table-container table {
   position: absolute;
