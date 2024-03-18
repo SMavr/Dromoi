@@ -51,6 +51,11 @@ scale_coordinates = [
     # Hitzaz                   
     ScaleCoordinates (5, [Coord(2, 7, 2), Coord(2, 6, 3), Coord(1, 8, 1),  
                           Coord(1, 7, 2), Coord(1, 5, 1), Coord(1, 4, 2), 
-                          Coord(1, 2, 2), Coord(1, 0, 4)])
+                          Coord(1, 2, 2), Coord(1, 0, 4)]),
+
+     # Hitzaskiar                   
+    ScaleCoordinates (6, [Coord(2, 7, 2), Coord(2, 6, 3), Coord(1, 8, 1),  
+                          Coord(1, 7, 2), Coord(1, 5, 1), Coord(1, 4, 2), 
+                          Coord(1, 1, 2), Coord(1, 0, 3)])                         
                           
                         ]
