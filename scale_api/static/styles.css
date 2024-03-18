@@ -108,6 +108,24 @@ td {
     color: white;
     background-color: #f50057;
     border-radius: 100%;
+    animation: bounce 0.5s ease-out;
+}
+
+@keyframes bounce {
+  0% {
+      transform: scale(0.1);
+  }
+  60% {
+      transform: scale(1.2);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+
+.circle:hover {
+  transform: scale(1.4);
 }
 
 .note-table {
