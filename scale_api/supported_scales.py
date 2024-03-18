@@ -76,6 +76,10 @@ scale_coordinates = [
     # Houzam
     ScaleCoordinates (10, [Coord(2, 7, 3), Coord(1, 9, 1), Coord(1, 8, 2),  
                           Coord(1, 7, 3), Coord(1, 5, 1), Coord(1, 4, 2), 
-                          Coord(1, 1, 2), Coord(1, 0, 3)])
+                          Coord(1, 1, 2), Coord(1, 0, 3)]),
 
+    # Ousak
+    ScaleCoordinates (10, [Coord(2, 7, 1), Coord(2, 6, 2), Coord(2, 4, 2),  
+                          Coord(2, 2, 4), Coord(1, 5, 1), Coord(1, 4, 2), 
+                          Coord(1, 2, 2), Coord(1, 0, 4)]),
                         ]
