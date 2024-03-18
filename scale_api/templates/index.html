@@ -7,13 +7,15 @@
     <title>Array of Items</title>
 </head>
 <body>
-    <div class="list">
-        <h2>Κλίμακες</h2>
-        <ul>   
-            {% for item in items %}
-                <li> <a href="{{ url_for('scale_details', scale_id=item.id) }}"> <span>{{ item.name }}</span></li>
-            {% endfor %}
-        </ul>
+    <div class="test">
+        <div class="list">
+            <h2>Κλίμακες</h2>
+            <ul>   
+                {% for item in items %}
+                    <li> <a href="{{ url_for('scale_details', scale_id=item.id) }}"> <span>{{ item.name }}</span></li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 </body>
 </html>

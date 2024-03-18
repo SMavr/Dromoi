@@ -9,13 +9,13 @@
 }
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
   background: #000;
   min-height: 100vh;
 }
 .list {
-  position: relative;
+  flex: 1;
+  padding-left: 40px;
+  padding-top: 20px;
 }
 h2 {
   color: #fff;
