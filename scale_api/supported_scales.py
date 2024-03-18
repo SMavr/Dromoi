@@ -71,5 +71,11 @@ scale_coordinates = [
     # Segiah
     ScaleCoordinates (9, [Coord(2, 7, 3), Coord(1, 10, 1), Coord(1, 8, 2),  
                           Coord(1, 7, 3), Coord(1, 5, 1), Coord(1, 3, 2), 
-                          Coord(1, 1, 2), Coord(1, 0, 3)])                                           
+                          Coord(1, 1, 2), Coord(1, 0, 3)]),
+
+    # Houzam
+    ScaleCoordinates (10, [Coord(2, 7, 3), Coord(1, 9, 1), Coord(1, 8, 2),  
+                          Coord(1, 7, 3), Coord(1, 5, 1), Coord(1, 4, 2), 
+                          Coord(1, 1, 2), Coord(1, 0, 3)])
+
                         ]
