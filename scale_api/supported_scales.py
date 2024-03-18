@@ -61,5 +61,9 @@ scale_coordinates = [
     # Peiraiotikos                   
     ScaleCoordinates (7, [Coord(2, 7, 1), Coord(2, 6, 2), Coord(1, 8, 1),  
                           Coord(1, 6, 1), Coord(1, 5, 2), Coord(1, 4, 3), 
-                          Coord(1, 1, 2), Coord(1, 0, 3)])                         
+                          Coord(1, 1, 2), Coord(1, 0, 3)]),
+    # Matzore
+    ScaleCoordinates (8, [Coord(2, 7, 2), Coord(2, 5, 4), Coord(1, 8, 1),  
+                          Coord(1, 7, 2), Coord(1, 5, 1), Coord(1, 3, 2), 
+                          Coord(1, 1, 2), Coord(1, 0, 3)])                     
                         ]
