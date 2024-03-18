@@ -13,7 +13,6 @@ body {
   min-height: 100vh;
 }
 .list {
-  flex: 1;
   padding-left: 40px;
   padding-top: 20px;
 }

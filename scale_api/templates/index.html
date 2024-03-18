@@ -6,8 +6,9 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
     <title>Array of Items</title>
 </head>
+
 <body>
-    <div class="test">
+    <div>
         <div class="list">
             <h2>Κλίμακες</h2>
             <ul>   
@@ -15,6 +16,9 @@
                     <li> <a href="{{ url_for('scale_details', scale_id=item.id) }}"> <span>{{ item.name }}</span></li>
                 {% endfor %}
             </ul>
+        </div>
+        <div class="detail">
+            {% block content %}{% endblock %}
         </div>
     </div>
 </body>
