@@ -44,6 +44,13 @@ scale_coordinates = [
                           Coord(1, 1, 2), Coord(1, 0, 3)]),
 
     # Nigris Poimenikos
-    ScaleCoordinates (2, [Coord(2, 7, 1), Coord(2, 5, 1), Coord(2, 4, 3),  
+    ScaleCoordinates (4, [Coord(2, 7, 1), Coord(2, 5, 1), Coord(2, 4, 3),  
                           Coord(1, 6, 1), Coord(1, 5, 2), Coord(1, 3, 1), 
-                          Coord(1, 2, 2), Coord(1, 0, 4)])]
+                          Coord(1, 2, 2), Coord(1, 0, 4)]),
+
+    # Hitzaz                   
+    ScaleCoordinates (5, [Coord(2, 7, 2), Coord(2, 6, 3), Coord(1, 8, 1),  
+                          Coord(1, 7, 2), Coord(1, 5, 1), Coord(1, 4, 2), 
+                          Coord(1, 2, 2), Coord(1, 0, 4)])
+                          
+                        ]
