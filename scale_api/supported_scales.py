@@ -21,12 +21,65 @@ class ScaleCoordinates:
         self.id = id
         self.coordinates = coordinates
 
-class Coordinate:
+class Coord:
     def __init__(self, chord, tab, finger):
         self.chord = chord
         self.tab = tab
         self.finger = finger
 
 scale_coordinates = [
-    ScaleCoordinates (1, [Coordinate(1, 11, 1), Coordinate(2, 10, 2)]), 
-    ScaleCoordinates (2, [Coordinate(2, 11, 3), Coordinate(1, 10, 1)])]
+    # Fusiko Minore
+    ScaleCoordinates (1, [Coord(2, 7, 1), Coord(2, 5, 1), Coord(2, 4, 2),  
+                          Coord(2, 2, 4), Coord(1, 5, 1), Coord(1, 4, 2), 
+                          Coord(1, 2, 2), Coord(1, 0, 4)]), 
+
+    # Armoniko Minore
+    ScaleCoordinates (2, [Coord(2, 7, 1), Coord(2, 5, 1), Coord(2, 4, 2),  
+                          Coord(2, 2, 4), Coord(1, 5, 1), Coord(1, 4, 2), 
+                          Coord(1, 1, 2), Coord(1, 0, 3)]),
+
+    # Niaventi
+    ScaleCoordinates (3, [Coord(2, 7, 1), Coord(2, 5, 1), Coord(2, 4, 3),  
+                          Coord(1, 6, 1), Coord(1, 5, 2), Coord(1, 4, 3), 
+                          Coord(1, 1, 2), Coord(1, 0, 3)]),
+
+    # Nigris Poimenikos
+    ScaleCoordinates (4, [Coord(2, 7, 1), Coord(2, 5, 1), Coord(2, 4, 3),  
+                          Coord(1, 6, 1), Coord(1, 5, 2), Coord(1, 3, 1), 
+                          Coord(1, 2, 2), Coord(1, 0, 4)]),
+
+    # Hitzaz                   
+    ScaleCoordinates (5, [Coord(2, 7, 2), Coord(2, 6, 3), Coord(1, 8, 1),  
+                          Coord(1, 7, 2), Coord(1, 5, 1), Coord(1, 4, 2), 
+                          Coord(1, 2, 2), Coord(1, 0, 4)]),
+
+     # Hitzaskiar                   
+    ScaleCoordinates (6, [Coord(2, 7, 2), Coord(2, 6, 3), Coord(1, 8, 1),  
+                          Coord(1, 7, 2), Coord(1, 5, 1), Coord(1, 4, 2), 
+                          Coord(1, 1, 2), Coord(1, 0, 3)]),                         
+                          
+    # Peiraiotikos                   
+    ScaleCoordinates (7, [Coord(2, 7, 1), Coord(2, 6, 2), Coord(1, 8, 1),  
+                          Coord(1, 6, 1), Coord(1, 5, 2), Coord(1, 4, 3), 
+                          Coord(1, 1, 2), Coord(1, 0, 3)]),
+
+    # Matzore
+    ScaleCoordinates (8, [Coord(2, 7, 2), Coord(2, 5, 4), Coord(1, 8, 1),  
+                          Coord(1, 7, 2), Coord(1, 5, 1), Coord(1, 3, 2), 
+                          Coord(1, 1, 2), Coord(1, 0, 3)]),
+
+    # Segiah
+    ScaleCoordinates (9, [Coord(2, 7, 3), Coord(1, 10, 1), Coord(1, 8, 2),  
+                          Coord(1, 7, 3), Coord(1, 5, 1), Coord(1, 3, 2), 
+                          Coord(1, 1, 2), Coord(1, 0, 3)]),
+
+    # Houzam
+    ScaleCoordinates (10, [Coord(2, 7, 3), Coord(1, 9, 1), Coord(1, 8, 2),  
+                          Coord(1, 7, 3), Coord(1, 5, 1), Coord(1, 4, 2), 
+                          Coord(1, 1, 2), Coord(1, 0, 3)]),
+
+    # Ousak
+    ScaleCoordinates (10, [Coord(2, 7, 1), Coord(2, 6, 2), Coord(2, 4, 2),  
+                          Coord(2, 2, 4), Coord(1, 5, 1), Coord(1, 4, 2), 
+                          Coord(1, 2, 2), Coord(1, 0, 4)]),
+                        ]
