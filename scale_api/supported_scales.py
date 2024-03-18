@@ -33,4 +33,7 @@ scale_coordinates = [
                           Coord(1, 2, 2), Coord(1, 0, 4)]), 
     ScaleCoordinates (2, [Coord(2, 7, 1), Coord(2, 5, 1), Coord(2, 4, 2),  
                           Coord(2, 2, 4), Coord(1, 5, 1), Coord(1, 4, 2), 
+                          Coord(1, 1, 2), Coord(1, 0, 3)]),
+    ScaleCoordinates (2, [Coord(2, 7, 1), Coord(2, 5, 1), Coord(2, 4, 3),  
+                          Coord(1, 6, 1), Coord(1, 5, 2), Coord(1, 4, 3), 
                           Coord(1, 1, 2), Coord(1, 0, 3)])]
